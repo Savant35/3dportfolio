@@ -53,7 +53,6 @@ const About = () => {
                                 showGraticules
                                 globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
                                 bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-                                label
                             />
                         </div>
                         <div>
@@ -70,8 +69,10 @@ const About = () => {
                     <div className="grid-container">
                         <img src="/assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
                         <div>
-                            <p className="grid-headtext">My passion for coding</p>
-                            <p className="grid-subtext"> I love solving problems and building things through code</p>
+                            <p className="grid-headtext">Other skills</p>
+                            <p className="grid-subtext"> I speak multiple languages, including fluency in English and Rundi, 
+                                and possess basic German skills at the A1 level on the European language scale.</p>
+                                I’m also photographer and also use digital tools like Blender and Three.js for creative projects.
                         </div>
                     </div>
                 </div>
