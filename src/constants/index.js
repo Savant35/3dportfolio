@@ -248,11 +248,11 @@ export const myProjects = [
 
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
-    deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
-    deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
+    deskScale: isSmall ? 2.65 : isMobile ? 4.06 : 6.065,
+    deskPosition: isMobile ? [0.5, -1.5, 0] : [2.25, -3.5, 2],
     cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
-    reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-    ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
+    reactLogoPosition: isSmall ? [2, 5, 2] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
+    ringPosition: isSmall ? [-4, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-14, 10, 0],
     targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
   };
 };
@@ -260,29 +260,30 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
   {
     id: 1,
-    name: 'Framer',
-    pos: 'Lead Web Developer',
-    duration: '2022 - Present',
-    title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: '/assets/framer.svg',
+    name: 'Mcnair',
+    pos: 'Internship Web Developer',
+    duration: '2024 - present',
+    title: "Designed and implemented the McNair Program webpage, utilizing HTML, CSS, and JavaScript for rapid prototyping and front-end development. Developed and integrated full-stack functionality using Next.js and Supabase for efficient web performance and data management.",
+    icon: '/assets/project-logo2.png',
     animation: 'victory',
   },
   {
-    id: 2,
-    name: 'Figma',
-    pos: 'Web Developer',
-    duration: '2020 - 2022',
-    title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: '/assets/figma.svg',
-    animation: 'clapping',
-  },
-  {
     id: 3,
-    name: 'Notion',
-    pos: 'Junior Web Developer',
-    duration: '2019 - 2020',
-    title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: '/assets/notion.svg',
+    name: 'McNair',
+    pos: 'Research Intern',
+    duration: '2024 - 2025',
+    title: "Researched and developed an AI tutoring system integrating a real-time facial emotion detection model using TensorFlow and MediaPipe with a conversational AI capable of adjusting dialogue based on user emotions. Aimed to enhance human-computer interaction by enabling emotionally adaptive conversations, supporting more engaging and personalized educational experiences.",
+    icon: '/assets/project-logo2.png',
     animation: 'salute',
   },
+  {
+    id: 2,
+    name: 'Student Support Services',
+    pos: 'Web Developer',
+    duration: '2023 - 2024',
+    title: "Tutored students in computer science concepts, specializing in Java programming, and developed a homepage prototype leveraging HTML, CSS, and JavaScript to enhance user experience and interface design.",
+    icon: '/assets/tutor.png',
+    animation: 'clapping',
+  },
+  
 ];
