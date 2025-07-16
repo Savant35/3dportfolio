@@ -43,10 +43,10 @@ const Hero = () => {
             </HeroCamera>
 
             <group>
-              <Target position={sizes.targetPosition} />
+              {/*<Target position={sizes.targetPosition} />
               <ReactLogo position={sizes.reactLogoPosition} />
-              <Rings position={sizes.ringPosition} />
-              <PythonLogo position={sizes.cubePosition} />
+              {/*<Rings position={sizes.ringPosition} /> /*}
+              {/*<PythonLogo position={sizes.cubePosition} /> */}
             </group>
 
             <ambientLight intensity={1} />

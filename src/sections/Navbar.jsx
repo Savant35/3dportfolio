@@ -22,7 +22,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen((open) => !open);
 
   return (
-    <header className="fixed w-full z-10 bg-black/90">
+    <header className="fixed top-0 left-0 w-full z-10 bg-black/90 ">
       <div className="max-w-7xl mx-auto flex items-center justify-between py-5 px-4">
         <a href="/" className="text-neutral-400 font-bold text-xl hover:text-white">
           Ali Arthur

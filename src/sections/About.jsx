@@ -66,19 +66,20 @@ const About = () => {
                     </div>
                 </div>
                 <div className="xl:col-span-2 xl:row-span-3">
-                    <div className="grid-container">
-                        <img src="/assets/grid3.png" alt="grid-3" className="w-full sm:h-[266px] h-fit object-contain" />
+                    <div className="grid-container border">
+                        <img src="/assets/grid3.jpg" alt="grid-3" className="w-full sm:h-[266px] h-fit " />
                         <div>
                             <p className="grid-headtext">Other skills</p>
                             <p className="grid-subtext"> I speak multiple languages, including fluency in English and Rundi, 
-                                and possess basic German skills at the A1 level on the European language scale.</p>
-                                I’m also photographer and also use digital tools like Blender and Three.js for creative projects.
+                                and possess basic German skills at the A1 level on the European language scale.
+                                I’m also photographer and also use digital tools like Blender and Three.js for creative projects.</p>
+                                
                         </div>
                     </div>
                 </div>
                 <div className="xl:col-span-1 xl:row-span-2">
                     <div className="grid-container">
-                        <img src="assets/grid4.png" alt="grid 4" className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top" />
+                        <img src="assets/grid6.png" alt="grid 4" className="w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top" />
                         <div className='space-y-2'>
                             <p className="grid-subtext text-center">Contact me</p>
                             <div className="copy-container" onClick={handleCopy}>
