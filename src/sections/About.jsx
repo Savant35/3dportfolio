@@ -61,7 +61,9 @@ const About = () => {
                             <p className='grid-subtext'>I’m currently based in Erie, PA, and am comfortable working remotely across multiple time zones.
                                 I’m also open to relocation opportunities for the right role.
                             </p>
-                            <Button name="Contact me" isBeam containerClass="w-full mt-10" href="#contact"/>
+                            <a href="#contact">
+                            <Button name="Contact me" isBeam containerClass="w-full mt-10"/>
+                            </a>
                         </div>
                     </div>
                 </div>
