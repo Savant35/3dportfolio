@@ -1,4 +1,4 @@
-import Navbar from "./sections/navbar"
+import Navbar from "./sections/Navbar.jsx"
 import Hero from './sections/Hero.jsx'
 import About from "./sections/About"
 import Projects from "./sections/Projects.jsx"
@@ -12,7 +12,6 @@ const App = () => {
        <Hero />
        <About />
        <Projects/>
-       {/*<Clients/> */}
        <Experience/>
        <Contact /> 
        <Footer />
