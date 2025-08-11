@@ -58,6 +58,38 @@ export const myProjects = [
     ],
   },
   {
+    title: 'Mcnair Scholars Program',
+    desc: 'Designed and developed a responsive webpage for the Ronald E. McNair Post-Baccalaureate Achievement Program at Gannon University, improving user engagement and access to program resources through modern UI/UX design, clear content architecture, and mobile optimization.',
+    subdesc:
+      'Built with Next.js 14, tailwindcss,Gsap and threejs',
+    href: 'https://gumcnair.aliarthur.com/',
+    texture: '/textures/project/project6.mp4',
+    logo: '/assets/project-logo5.png',
+    logoStyle: {
+      backgroundColor: '#1C1A43',
+      border: '0.2px solid #252262',
+      boxShadow: '0px 0px 60px 0px #635BFF4D',
+    },
+    spotlight: '/assets/spotlight5.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+        path: '/assets/typescript.png',
+      },
+    ],
+  },
+  {
     title: 'Ronald E. McNair Post‑Baccalaureate Achievement Program',
     desc: 'Designed and developed a responsive webpage for the Ronald E. McNair Post-Baccalaureate Achievement Program at Gannon University, improving user engagement and access to program resources through modern UI/UX design, clear content architecture, and mobile optimization.',
     subdesc:
