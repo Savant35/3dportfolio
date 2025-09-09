@@ -7,12 +7,11 @@ import Footer from "./sections/Footer.jsx"
 import Experience from "./sections/Experience.jsx"
 const App = () => {
   return (
-    <main className="max-w-7xl mx-auto">
+    <main className="max-w-[90rem] mx-auto">
       <Navbar />
        <Hero />
-       <About />
-       <Projects/>
        <Experience/>
+       <Projects/>
        <Contact /> 
        <Footer />
     </main>
