@@ -1,60 +1,76 @@
-import { Leva } from 'leva';
-import { Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { useMediaQuery } from 'react-responsive';
-import { PerspectiveCamera } from '@react-three/drei';
+import React from 'react';
 
-import Button from '../components/Button.jsx';
-import CanvasLoader from '../components/Loading.jsx';
-import HeroCamera from '../components/HeroCamera.jsx';
-import { calculateSizes } from '../constants/index.js';
-import { HackerRoom2 } from '../components/HackerRoom2.jsx';
+// Social media data for easy mapping
+const socialLinks = [
+  { href: "https://github.com/Savant35", src: "/assets/github.svg", alt: "github" },
+  { href: "https://www.linkedin.com/in/arthur-ngendanan/", src: "/assets/linkedin.svg", alt: "linkedin" },
+];
 
 const Hero = () => {
-  // Use media queries to determine screen size
-  const isSmall = useMediaQuery({ maxWidth: 440 });
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
-
-  const sizes = calculateSizes(isSmall, isMobile, isTablet);
-
   return (
-    <section className="min-h-screen w-full flex flex-col relative" id="home">
-      <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
-        <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
-          Hi, I am Ali<span className="waving-hand">👋</span>
-        </p>
-        <p className="hero_tag text-gray_gradient">Welcome to my Portfolio</p>
-      </div>
+    <section className="min-h-screen w-full flex items-center relative c-space" id="home">
+      <div className="grid lg:grid-cols-2 gap-y-20 gap-x-16 items-center w-full max-w-7xl mx-auto border-white">
+        
+        {/* Left Column: Text Content */}
+        <div className="flex flex-col text-center lg:text-left">
+          <p className="hero_tag text-gray_gradient">
+            Ali Arthur
+          </p>
+          <p className="grid-subtext mt-4 max-w-lg mx-auto lg:mx-0">
+            <b>Welcome to my portfolio!</b> I am a full-stack developer with experience in building dynamic and user-focused web applications. My expertise includes front-end and back-end development, turning ideas into engaging digital experiences.
+          </p>
+        </div>
 
-      <div className="w-full h-full absolute inset-0">
-        <Canvas className="w-full h-full">
-          <Suspense fallback={<CanvasLoader />}>
-            {/* To hide controller */}
-            <Leva hidden />
-            <PerspectiveCamera makeDefault position={[0, 0, 30]} />
+        {/* Right Column: Profile Image & Socials */}
+        <div className="flex justify-center items-center relative order-first lg:order-last">
+          <div className="relative w-64 h-64 lg:w-80 lg:h-96">
+            {/* The "Frame" element */}
+            <div className="absolute w-full h-full bg-transparent border-4 border-neutral-700 -bottom-3 -right-3 lg:-bottom-4 lg:-right-4"></div>
+            
+            <img 
+              src="/assets/Home.jpg" 
+              alt="photo of Ali Arthur" 
+              className="relative w-full h-full object-cover"
+            />
+            
+            {/* Decorative Arrow pointing to text */}
+            <img 
+              src="/assets/curved-arrow.svg" 
+              alt="Curved arrow decoration" 
+              className="absolute w-16 top-1/2 -translate-y-1/2 -left-12 lg:w-24 lg:-left-20 transform -scale-x-100 rotate-[25deg]"
+            />
 
-            <HeroCamera isMobile={isMobile}>
-              <HackerRoom2 scale={sizes.deskScale} position={sizes.deskPosition} rotation={[0, 4.8, -0.1]} />
-            </HeroCamera>
+            {/* Decorative Lines */}
+            <img 
+              src="/assets/random-lines.svg" 
+              alt="Random lines decoration" 
+              className="absolute w-16 -bottom-10 -right-10 lg:w-20 lg:-bottom-12 lg:-right-12"
+            />
+            
+            {/* Social Links positioned to the right of the image (Large Screens Only) */}
+            <div className="absolute top-1/2 right-0 transform translate-x-[150%] -translate-y-1/2 hidden lg:flex flex-col gap-4">
+              {socialLinks.map((link) => (
+                <a key={link.alt} href={link.href} target="_blank" rel="noopener noreferrer">
+                  <div className="social-icon">
+                    <img src={link.src} alt={link.alt} className="w-1/2 h-1/2" />
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
 
-            <group>
-              {/*<Target position={sizes.targetPosition} />
-              <ReactLogo position={sizes.reactLogoPosition} />
-              {/*<Rings position={sizes.ringPosition} /> /*}
-              {/*<PythonLogo position={sizes.cubePosition} /> */}
-            </group>
-
-            <ambientLight intensity={1} />
-            <directionalLight position={[10, 10, 10]} intensity={0.5} />
-          </Suspense>
-        </Canvas>
-      </div>
-
-      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
-        <a href="#contact" className="w-fit">
-          <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
-        </a>
+        {/* Social Links for Mobile View (below image) */}
+        <div className="flex gap-4 justify-center lg:hidden order-first -mt-8">
+          {socialLinks.map((link) => (
+            <a key={link.alt} href={link.href} target="_blank" rel="noopener noreferrer">
+              <div className="social-icon">
+                <img src={link.src} alt={link.alt} className="w-1/2 h-1/2" />
+              </div>
+            </a>
+          ))}
+        </div>
+        
       </div>
     </section>
   );
