@@ -1,30 +1,14 @@
 export const navLinks = [
-  {
-    id: 1,
-    name: 'Home',
-    href: '#home',
-  },
-  {
-    id: 3,
-    name: 'Work',
-    href: '#work',
-  },
-  {
-    id: 4,
-    name: 'Contact',
-    href: '#contact',
-  },
+  { id: 1, name: 'Home', href: '#home' },
+  { id: 3, name: 'Work', href: '#work' },
+  { id: 4, name: 'Contact', href: '#contact' },
 ];
 
-
-
 export const myProjects = [
-  
   {
     title: 'OmniTutorAI - AI-Powered Tutoring Web application',
-    desc: 'OmnitutorAI is a web platform where users create and interact with AI voice-based learning companions customized by subject, voice, and style, enabling real-time educational conversations, session tracking, and a personalized learning experience.Users can build companions by choosing a name, subject, voice, style, and session length, then engage in live voice chats where the AI teaches specific topics, while browsing, filtering, bookmarking, and revisiting past sessions for a tailored learning journey',
-    subdesc:
-      'Built with Nexjs tailwindcss Ts and Clerk',
+    desc: 'OmnitutorAI is a web platform where users create and interact with AI voice-based learning companions customized by subject, voice, and style, enabling real-time educational conversations, session tracking, and a personalized learning experience. Users can build companions by choosing a name, subject, voice, style, and session length, then engage in live voice chats where the AI teaches specific topics, while browsing, filtering, bookmarking, and revisiting past sessions for a tailored learning journey',
+    subdesc: 'Built with Nexjs tailwindcss Ts and Clerk',
     href: 'https://omnitutorai.aliarthur.com',
     texture: '/textures/project/project2.mp4',
     logo: '/assets/image1.png',
@@ -35,28 +19,15 @@ export const myProjects = [
     },
     spotlight: '/assets/spotlight2.png',
     tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
+      { id: 1, name: 'React.js', path: '/assets/react.svg' },
+      { id: 2, name: 'TailwindCSS', path: 'assets/tailwindcss.png' },
+      { id: 3, name: 'TypeScript', path: '/assets/typescript.png' },
     ],
   },
   {
     title: 'Mcnair Scholars Program',
     desc: 'Designed and developed a responsive webpage for the Ronald E. McNair Post-Baccalaureate Achievement Program at Gannon University, improving user engagement and access to program resources through modern UI/UX design, clear content architecture, and mobile optimization.',
-    subdesc:
-      'Built with Next.js 14, tailwindcss,Gsap and threejs',
+    subdesc: 'Built with Next.js 14, tailwindcss,Gsap and threejs',
     href: 'https://gumcnair.aliarthur.com/',
     texture: '/textures/project/project6.mp4',
     logo: '/assets/project-logo5.png',
@@ -67,28 +38,15 @@ export const myProjects = [
     },
     spotlight: '/assets/spotlight5.png',
     tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
+      { id: 1, name: 'React.js', path: '/assets/react.svg' },
+      { id: 2, name: 'TailwindCSS', path: 'assets/tailwindcss.png' },
+      { id: 3, name: 'TypeScript', path: '/assets/typescript.png' },
     ],
   },
   {
-    title: 'Ronald E. McNair Post‑Baccalaureate Achievement Program',
+    title: 'Ronald E. McNair Post-Baccalaureate Achievement Program',
     desc: 'Designed and developed a responsive webpage for the Ronald E. McNair Post-Baccalaureate Achievement Program at Gannon University, improving user engagement and access to program resources through modern UI/UX design, clear content architecture, and mobile optimization.',
-    subdesc:
-      'Built with Next.js 14, tailwindcss and threejs  ',
+    subdesc: 'Built with Next.js 14, tailwindcss and threejs',
     href: 'https://mcnair.aliarthur.com/',
     texture: '/textures/project/project5.mp4',
     logo: '/assets/project-logo5.png',
@@ -99,54 +57,34 @@ export const myProjects = [
     },
     spotlight: '/assets/spotlight5.png',
     tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
+      { id: 1, name: 'React.js', path: '/assets/react.svg' },
+      { id: 2, name: 'TailwindCSS', path: 'assets/tailwindcss.png' },
+      { id: 3, name: 'TypeScript', path: '/assets/typescript.png' },
     ],
   },
   {
     title: 'FilmFinder – Movie Discovery Platform',
     desc: 'FilmFinder is a React-based web app that helps users discover movies by searching for titles, browsing genres, and viewing detailed film information pulled from The Movie Database (TMDb) API',
-    subdesc:
-      'Users can explore trending films, filter movies by genre, search for specific titles, and view posters, ratings, synopses, and release dates in a responsive interface designed for a smooth movie-browsing experience',
-    href: 'https://github.com/Savant35/filmfinder',
+    subdesc: 'Users can explore trending films, filter movies by genre, search for specific titles, and view posters, ratings, synopses, and release dates in a responsive interface designed for a smooth movie-browsing experience',
+    github: 'https://github.com/Savant35/filmfinder',
     texture: '/textures/project/project3.mp4',
     logo: '/assets/image4.png',
     logoStyle: {
       backgroundColor: '#60f5a1',
-      background:
-        'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
+      background: 'linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)',
       border: '0.2px solid rgba(208, 213, 221, 1)',
       boxShadow: '0px 0px 60px 0px rgba(35, 131, 96, 0.3)',
     },
     spotlight: '/assets/spotlight3.png',
     tags: [
-      {
-        id: 1,
-        name: 'Python',
-        path: '/assets/python.svg',
-      },
-     
+      { id: 1, name: 'Python', path: '/assets/python.svg' },
     ],
   },
   {
     title: 'Portfolio – Personal Developer Showcase',
     desc: 'A personal portfolio website showcasing projects, research,skills, and experiences. Built with a focus on clean design and responsive layouts to provide an engaging and professional online presence.',
-    subdesc:
-      'The site features smooth scrolling navigation, sections for an introduction, about info, project galleries with live previews and links, and a contact form, all styled with custom CSS for a clean and modern look.',
-    href: 'https://github.com/Savant35/portfolio',
+    subdesc: 'The site features smooth scrolling navigation, sections for an introduction, about info, project galleries with live previews and links, and a contact form, all styled with custom CSS for a clean and modern look.',
+    github: 'https://github.com/Savant35/portfolio',
     texture: '/textures/project/project4.mp4',
     logo: '/assets/image2.png',
     logoStyle: {
@@ -156,27 +94,14 @@ export const myProjects = [
     },
     spotlight: '/assets/spotlight4.png',
     tags: [
-      {
-        id: 1,
-        name: 'Javascript',
-        path: '/assets/html.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/js.gif',
-      },
-      
+      { id: 1, name: 'Javascript', path: '/assets/html.svg' },
+      { id: 2, name: 'TailwindCSS', path: 'assets/tailwindcss.png' },
+      { id: 3, name: 'TypeScript', path: '/assets/js.gif' },
     ],
   },
- 
 ];
 
+// Computes responsive scaling and positioning for 3D elements
 export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
     deskScale: isSmall ? 2.65 : isMobile ? 4.06 : 6.065,
@@ -216,5 +141,4 @@ export const workExperiences = [
     icon: '/assets/tutor.png',
     animation: 'clapping',
   },
-  
 ];
